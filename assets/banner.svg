@@ -11,38 +11,34 @@
       <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
     <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
   </defs>
 
   <style>
-    .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 46px; fill: #ffffff; }
-    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 20px; fill: #94a3b8; }
-    .badge-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 14px; fill: #38bdf8; }
-    .grid-line { stroke: #334155; stroke-opacity: 0.3; stroke-width: 1; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 44px; fill: #ffffff; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 19px; fill: #94a3b8; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 13px; fill: #38bdf8; letter-spacing: 0.5px; }
+    .node-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; fill: #f8fafc; }
+    .grid-line { stroke: #334155; stroke-opacity: 0.25; stroke-width: 1; }
     
-    @keyframes pulse {
-      0% { opacity: 0.3; transform: scale(1); }
-      50% { opacity: 0.7; transform: scale(1.05); }
-      100% { opacity: 0.3; transform: scale(1); }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.08); }
     }
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-      100% { transform: translateY(0px); }
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
     }
-    @keyframes dash {
-      to { stroke-dashoffset: -40; }
+    @keyframes dashFlow {
+      from { stroke-dashoffset: 24; }
+      to { stroke-dashoffset: 0; }
     }
 
-    .animated-bg-circle { animation: pulse 6s infinite ease-in-out; transform-origin: center; }
-    .animated-card { animation: float 4s infinite ease-in-out; }
-    .animated-flow { stroke-dasharray: 8 4; animation: dash 2s linear infinite; }
+    .animated-bg-circle { animation: pulseGlow 5s infinite ease-in-out; transform-box: fill-box; transform-origin: center; }
+    .animated-card { animation: floatCard 4s infinite ease-in-out; }
+    .animated-flow { stroke-dasharray: 6 4; animation: dashFlow 1.5s linear infinite; }
   </style>
 
   <!-- Background -->
@@ -61,48 +57,51 @@
     <line x1="0" y1="240" x2="1200" y2="240" class="grid-line"/>
   </g>
 
-  <!-- Dynamic Animated Background Glow Circles (Behind Text) -->
-  <circle cx="150" cy="150" r="140" fill="#0284c7" opacity="0.15" class="animated-bg-circle"/>
-  <circle cx="1050" cy="150" r="160" fill="#6366f1" opacity="0.15" class="animated-bg-circle" style="animation-delay: -3s;"/>
+  <!-- Background Glow Effects -->
+  <circle cx="200" cy="150" r="140" fill="#0284c7" opacity="0.25" class="animated-bg-circle"/>
+  <circle cx="1000" cy="150" r="160" fill="#6366f1" opacity="0.25" class="animated-bg-circle" style="animation-delay: -2.5s;"/>
 
-  <!-- Dynamic Flow Diagram Elements (Right Side Graphic - Clear of Main Text) -->
-  <g transform="translate(820, 65)" class="animated-card">
-    <rect width="320" height="170" rx="12" fill="url(#card-gradient)" stroke="#475569" stroke-width="1.5"/>
+  <!-- Flow Diagram Card (Positioned safely on the right) -->
+  <g transform="translate(800, 60)" class="animated-card">
+    <rect width="340" height="180" rx="12" fill="url(#card-gradient)" stroke="#475569" stroke-width="1.5"/>
     
     <!-- Flow Nodes -->
-    <rect x="25" y="30" width="80" height="35" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
-    <text x="65" y="52" font-family="sans-serif" font-size="11" fill="#e2e8f0" text-anchor="middle">Citizen Intake</text>
-    
-    <rect x="145" y="30" width="80" height="35" rx="6" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
-    <text x="185" y="52" font-family="sans-serif" font-size="11" fill="#e2e8f0" text-anchor="middle">Triage & Case</text>
-    
-    <rect x="215" y="105" width="85" height="35" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
-    <text x="257" y="127" font-family="sans-serif" font-size="11" fill="#e2e8f0" text-anchor="middle">Inspection</text>
+    <g transform="translate(25, 30)">
+      <rect width="120" height="38" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="60" y="23" class="node-text" text-anchor="middle">Citizen Intake (311)</text>
+    </g>
 
-    <rect x="75" y="105" width="85" height="35" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
-    <text x="117" y="127" font-family="sans-serif" font-size="11" fill="#e2e8f0" text-anchor="middle">Resolution</text>
+    <g transform="translate(195, 30)">
+      <rect width="120" height="38" rx="6" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+      <text x="60" y="23" class="node-text" text-anchor="middle">Triage &amp; Case</text>
+    </g>
+    
+    <g transform="translate(195, 112)">
+      <rect width="120" height="38" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+      <text x="60" y="23" class="node-text" text-anchor="middle">Field Inspection</text>
+    </g>
+
+    <g transform="translate(25, 112)">
+      <rect width="120" height="38" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+      <text x="60" y="23" class="node-text" text-anchor="middle">Resolution &amp; Fee</text>
+    </g>
 
     <!-- Animated Connecting Paths -->
-    <path d="M 105 47 L 145 47" stroke="#38bdf8" stroke-width="2" class="animated-flow"/>
-    <path d="M 185 65 L 185 85 L 257 85 L 257 105" fill="none" stroke="#818cf8" stroke-width="2" class="animated-flow"/>
-    <path d="M 215 122 L 160 122" fill="none" stroke="#c084fc" stroke-width="2" class="animated-flow"/>
+    <path d="M 145 49 L 195 49" fill="none" stroke="#38bdf8" stroke-width="2" class="animated-flow"/>
+    <path d="M 255 68 L 255 112" fill="none" stroke="#818cf8" stroke-width="2" class="animated-flow"/>
+    <path d="M 195 131 L 145 131" fill="none" stroke="#c084fc" stroke-width="2" class="animated-flow"/>
   </g>
 
   <!-- Title Pill / Category Badge -->
   <g transform="translate(60, 50)">
-    <rect width="260" height="30" rx="15" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1"/>
-    <text x="130" y="20" class="badge-text" text-anchor="middle">GOVTECH &amp; CIVIC TECH ECOSYSTEM</text>
+    <rect width="270" height="32" rx="16" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="135" y="21" class="badge-text" text-anchor="middle">GOVTECH &amp; CIVIC TECH ECOSYSTEM</text>
   </g>
 
-  <!-- Foreground Title and Subtitle (Crisp and Unobstructed) -->
-  <text x="60" y="130" class="title">
-    Awesome Code Enforcement <tspan fill="url(#accent-gradient)">🚀</tspan>
-  </text>
-
-  <text x="60" y="175" class="subtitle">
-    Municipal Code Compliance, Case Management, Inspections &amp; Open311 🏢📋
-  </text>
+  <!-- Title & Subtitle -->
+  <text x="60" y="132" class="title">Awesome Code Enforcement</text>
+  <text x="60" y="175" class="subtitle">Municipal Code Compliance, Case Management &amp; Open311 Ecosystem</text>
 
   <!-- Bottom Accent Bar -->
-  <rect x="60" y="225" width="680" height="4" rx="2" fill="url(#accent-gradient)"/>
+  <rect x="60" y="215" width="660" height="4" rx="2" fill="url(#accent-gradient)"/>
 </svg>
