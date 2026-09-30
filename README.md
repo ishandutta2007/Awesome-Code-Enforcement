@@ -1,171 +1,99 @@
-# Awesome-Code-Enforcement
+# Awesome Code Enforcement 🏢 Solutions & Open-Source Ecosystem 🚀
 
-## Top Code Enforcement Platforms Ecosystem
+![Awesome Code Enforcement Banner](./assets/banner.svg)
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Enforcement"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Code-Enforcement?style=flat-square&color=gold" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Enforcement/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Code-Enforcement?style=flat-square" alt="GitHub forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Enforcement/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Code-Enforcement?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 📌 Top Code Enforcement Platforms Ecosystem
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+**Curated List of Municipal Code Enforcement SaaS Platforms, GovTech Software & Open-Source GitHub Projects** 🌟
 
-*Focused on Municipal Code Compliance, Violation Tracking, Case Management & Field Inspections*
+*Focused on Municipal Code Compliance, Violation Tracking, Citizen 311 Reporting, Case Management & Mobile Field Inspections* 🏛️📱
 
-**Last updated: September 2026**
+**Last updated: September 2026** 📅
 
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Code Enforcement** and municipal issue management. These software tools empower local governments, city councils, municipalities, and regulatory agencies to streamline complaint intake, track zoning/building violations, conduct mobile field inspections, issue citations, and enforce compliance with local ordinances and property maintenance standards.
 
+---
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Code Enforcement**. These tools help local governments, municipalities, and regulatory agencies manage complaints, track violations, conduct field inspections, and enforce compliance with building codes, zoning ordinances, and property maintenance standards.
+## 📑 Table of Contents
+- [📊 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
+---
 
+## 📊 SaaS/Hosted Platforms
 
-**Examples** include OpenGov Code Enforcement, Accela Code Enforcement, Tyler EnerGov, CityView, CentralSquare, SmartGov, CivicPlus, CityWorks, Clariti, and CityReporter (the category leaders).
+The global municipal government software / GovTech market size is estimated at **$15B - $25B**, with the dedicated Permitting, Licensing, and Code Enforcement (PLCE) sub-sector accounting for approximately **$2B - $3.5B annually**. The market is **moderately to highly fragmented**, dominated by legacy public-sector enterprise suites (Tyler Technologies, CentralSquare, Accela) alongside rapidly growing modern cloud-native SaaS platforms (OpenGov, Clariti, CivicPlus).
 
+| Platform 🏢 | Valuation / Revenue Size 💰 | Starting Pricing Tier 💵 | Free Tier / Trial Limit ⏳ | Key Features & Overview 🔍 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Tyler EnerGov](https://www.tylertech.com/)** | **~$24B Market Cap** (~$2.1B annual revenue) | Standard enterprise tier starts at ~$15,000/year (scaled by city population) | No free tier; custom guided demo & proof-of-concept trial upon municipal request | Comprehensive community development suite featuring **iG Enforce** and **iG Inspect** mobile apps. Lake Forest, CA increased online inspection requests by 40%+ using EnerGov. 🏙️ |
+| **[CityWorks](https://www.cityworks.com/)** | **~$1B Enterprise Value** (Acquired by Trimble) | Starts at ~$12,000/year base platform licensing | No free tier; 30-day interactive sandbox demo for certified local government administrators | GIS-centric asset management and code enforcement case tracking built directly on Esri ArcGIS spatial architecture. 🌐 |
+| **[CentralSquare](https://www.centralsquare.com/)** | **~$800M Revenue** (Backed by Bain Capital & Vista) | Starts at ~$10,000/year per municipal department module | No free tier; customized live environment demo upon municipal request | Public sector suite integrating municipal code enforcement with broader public safety and community development workflows. 🚔 |
+| **[OpenGov Code Enforcement](https://opengov.com/products/permitting-and-licensing/building-permit-software/)** | **$1.8B Valuation** (Acquired by Cox Enterprises) | Starts at ~$8,000/year per municipal agency | No free tier; 14-day structured interactive pilot available for government agencies | Cloud-native code enforcement platform with drag-and-drop workflow builders, mobile offline inspections, and direct citizen messaging. Used by 2,000+ local governments. ⚡ |
+| **[Accela Code Enforcement](https://www.accela.com/)** | **~$1.5B Valuation** (Acquired by Francisco Partners) | Starts at ~$7,500/year for starter municipal package | No free tier; guided Sandbox demo environment upon request | Robust public-sector code enforcement management platform covering complaint intake, automated penalty billing, real-time KPI dashboards, and AI capabilities. 📊 |
+| **[CivicPlus](https://www.civicplus.com/)** | **~$500M Valuation** (Backed by Insight Partners) | Starts at ~$5,000/year for base code enforcement module | No free tier; customized interactive walkthrough & product trial upon request | Civic Experience Platform featuring Municode codification integration, online municipal code hosting, ViewPro Zoning, and SeeClickFix 311 intake. 🏘️ |
+| **[CityView](https://www.cityviewsoftware.com/)** | **~$150M Revenue** (Division of Harris Computer / Constellation Software) | Starts at ~$5,000/year for core module | No free tier; scheduled guided interactive demo | Comprehensive permitting, licensing, and code compliance suite with automated case management and citizen self-service portals. 📄 |
+| **[SmartGov](https://www.smartgov.com/)** | **~$50M Valuation** (Part of Dude Solutions / Brightly / Siemens) | Starts at ~$4,000/year | No free tier; 30-day guided evaluation environment | Cloud-based government permitting and code enforcement software offering online complaint filing, automated task routing, and inspector scheduling. 📝 |
+| **[Clariti](https://www.clariti.app/)** | **~$30M - $50M Valuation** | Starts at ~$3,500/year per agency package | No free tier; 14-day agency evaluation trial upon request | Next-generation community development and permitting platform with built-in code enforcement workflows and mobile officer tools. 🚀 |
+| **[CityReporter](https://www.cityreporter.com/)** | **~$5M - $10M Revenue** | Starts at ~$1,500/year (or ~$125/month billed annually) | 30-day full-featured free trial (no credit card required) | Code enforcement and inspection app specifically tailored for small to mid-sized municipalities. Includes complaint tracking and offline mobile field inspection checklists. 📱 |
 
+---
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom case workflows, and transparent municipal data — ideal for local governments that need full control over their code enforcement operations without per-case SaaS fees or vendor lock-in.
+## 💻 Open-Source GitHub Projects
 
+Below are top open-source GitHub repositories for civic reporting, municipal 311 issue tracking, and property code inspection backend frameworks. Repositories are sorted by GitHub star count in descending order ⭐.
 
+| Open-Source Project 🛠️ | GitHub Star Count ⭐ | Description & Features 💡 |
+| :--- | :--- | :--- |
+| **[mysociety/fixmystreet](https://github.com/mysociety/fixmystreet)** | [![GitHub stars](https://img.shields.io/github/stars/mysociety/fixmystreet?style=social&color=white)](https://github.com/mysociety/fixmystreet/stargazers) | **The premiere open-source platform for citizen issue & code reporting.** Written in Perl/Catalyst. Powers FixMyStreet.com (sent 200,000+ reports to 400+ UK local councils). Open311 client/server API compatible. 🇬🇧 |
+| **[markaspot/mark-a-spot](https://github.com/markaspot/mark-a-spot)** | [![GitHub stars](https://img.shields.io/github/stars/markaspot/mark-a-spot?style=social&color=white)](https://github.com/markaspot/mark-a-spot/stargazers) | **Open-source civic issue tracking & reporting system.** Decoupled Drupal backend with Vue.js PWA frontend. Full Open311 Server API support, geocoding, interactive maps, and municipal status workflows. 📍 |
+| **[egovernments/DIGIT-OSS](https://github.com/egovernments/DIGIT-OSS)** | [![GitHub stars](https://img.shields.io/github/stars/egovernments/DIGIT-OSS?style=social&color=white)](https://github.com/egovernments/DIGIT-OSS/stargazers) | **Open-source digital governance platform (eGov/DIGIT).** Includes Citizen Complaint Resolution System (CCRS) and property tax/violation management microservices for urban local bodies. 🏛️ |
+| **[AimeeKnight/Civic311](https://github.com/AimeeKnight/Civic311)** | [![GitHub stars](https://img.shields.io/github/stars/AimeeKnight/Civic311?style=social&color=white)](https://github.com/AimeeKnight/Civic311/stargazers) | **Node.js non-emergency city issue reporting application.** Lightweight framework for public issue reporting, geolocation tagging, and admin management triage. 🏙️ |
+| **[codeforamerica/open311-on-joget](https://github.com/codeforamerica/open311-on-joget)** | [![GitHub stars](https://img.shields.io/github/stars/codeforamerica/open311-on-joget?style=social&color=white)](https://github.com/codeforamerica/open311-on-joget/stargazers) | **Open311 backend built on the Joget Workflow Engine.** Includes ready-to-run Joget applications for Open311 complaint forms, administrative data lists, and XML endpoints. ⚙️ |
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+---
 
+## 🤝 How to Contribute
 
+Contributions are highly appreciated! Help keep this municipal software ecosystem up-to-date 💡:
 
-## Table of Contents
+1. 🍴 Fork the repository.
+2. 📝 Add or edit entries in `README.md` (following the existing table formats).
+3. 🔗 Include exact product names, official links, pricing details, and factual feature descriptions.
+4. 🚀 Open a Pull Request with a clear summary of changes.
 
+---
 
+## ☕ Support & Sponsorship
 
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+If you find this curated list helpful for your municipal government research, civic tech projects, or code enforcement software evaluation, please consider supporting the project:
 
-- [Open-Source GitHub Projects](#open-source-github-projects)
+- ⭐ **Star** this repository on GitHub to increase visibility!
+- 🔀 **Fork** and share it with fellow civic hackers and urban tech teams.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing open-source maintenance, check out the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Thank you for your support! ❤️
 
-- [How to Contribute](#how-to-contribute)
+---
 
-- [Disclaimer](#disclaimer)
+## 📈 Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Code-Enforcement&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Code-Enforcement&type=date&legend=top-left)
 
+---
 
-## SaaS/Hosted Platforms
+## ⚠️ Disclaimer
 
-
-
-- **[OpenGov Code Enforcement](https://opengov.com/products/permitting-and-licensing/building-permit-software/)**
-
-  Cloud-based code enforcement software integrated into OpenGov's Public Service Platform. Centralizes complaints, violations, and inspections in a mobile-friendly platform . Features configurable workflows with drag-and-drop tools and conditional logic, mobile inspections with offline access, and direct applicant-to-staff communication . Used by 2,000+ governments with 65% faster review times and 70%+ applications moved online .
-
-
-
-- **[Accela Code Enforcement](https://www.accela.com/)**
-
-  Comprehensive code enforcement management platform for public sector. Provides complaint tracking, violation processing, field inspections, and integrated billing/payment modules engineered for public sector fee administration . Fresno County selected Accela in 2026 for a 5-year, $513,025 agreement after receiving 15 responsive proposals, citing mobile capabilities for field officers, automated billing, real-time KPI dashboards, and AI-driven capabilities .
-
-
-
-- **[Tyler EnerGov](https://www.tylertech.com/)**
-
-  Integrated community development suite including code enforcement, planning, building, and public works. Features **iG Enforce** and **iG Inspect** mobile apps for field officers . Lake Forest, California increased online inspection requests by 40%+ through EnerGov's Citizen Access Portal and reported 20%+ year-over-year permit activity increase with minimal staff additions .
-
-
-
-- **[CivicPlus](https://www.civicplus.com/)**
-
-  Civic Experience Platform with Municode codification, online code hosting, and integration with ViewPro Zoning and SeeClickFix for code enforcement complaint intake and management .
-
-
-
-- **[CityView](https://www.cityviewsoftware.com/)**
-
-  Permitting, licensing, and code enforcement software for local governments. Provides case management, inspections, and citizen portals.
-
-
-
-- **[CentralSquare](https://www.centralsquare.com/)**
-
-  Public sector software platform with code enforcement modules integrated into broader community development and public safety solutions.
-
-
-
-- **[SmartGov](https://www.smartgov.com/)**
-
-  Government permitting and code enforcement platform. Provides online application submission, case tracking, and inspection scheduling.
-
-
-
-- **[CityWorks](https://www.cityworks.com/)**
-
-  GIS-centric asset management and permitting platform. Includes code enforcement case management and field inspection capabilities.
-
-
-
-- **[Clariti](https://www.clariti.app/)**
-
-  Community development and permitting platform with code enforcement case management, citizen self-service, and mobile field tools.
-
-
-
-- **[CityReporter](https://www.cityreporter.com/)**
-
-  Code enforcement and inspections software for municipalities. Provides complaint intake, case tracking, and field inspection workflows.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Citizen Reporting & Complaint Intake
-
-
-
-- **[FixMyStreet Platform](https://github.com/mysociety/fixmystreet)**
-
-  **The most established open-source platform for citizens to report local problems.** Free, open-source software platform designed to empower websites that want people to report problems in their local area . In the UK, FixMyStreet.com has sent **over 200,000 reports to over 400 local governments** . Posts are publicly viewable, where users can leave updates and set up alerts . Developed by mySociety, written in Perl using the Catalyst framework, with MySQL database . Features **Open311 client** capability, allowing any Open311-compliant back-end to be used with little or no modification . The open nature and GitHub availability make it relatively easy for competent developers to add or customise any parts to their own requirements . Direct competitors include PublicStuff and SeeClickFix .
-
-
-
-- **[Open311 on Joget](https://github.com/codeforamerica/open311-on-joget)**
-
-  Implementation of an **Open311 backend using the Joget workflow system** . Requires Joget V3 and MySQL. Provides a Joget application for **Open311 Request Form** (citizens create requests that enter the database), **Open311 Data List** (view all requests), and **open311data.jsp** (displays Open311 requests in XML specification for Open311 Dashboard) . Includes sample 311 requests file. **Open source**.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Citizen Reporting**: **FixMyStreet Platform** (200,000+ reports to 400+ governments, Open311-compliant) .
-
-- **Open311 Backend**: **Open311 on Joget** (Joget workflow system, MySQL) .
-
-- **Open311 Standards**: **Open311 GeoReport v2** specification (open standard for service requests, used by FixMyStreet and many municipal 311 systems) .
-
-
-
-**Frameworks for building custom systems**: **FixMyStreet Platform** serves as the primary open-source foundation for citizen-facing code complaint intake, with Open311 API compatibility enabling integration with municipal back-end systems . Add **Joget** or custom workflows for case management, **PostgreSQL/MySQL** for persistence, and **GIS/mapping** (OpenStreetMap or ESRI ArcGIS) for spatial case visualization.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Code enforcement platforms handle sensitive municipal data; ensure compliance with local government regulations and public records requirements.
-
-- **Open-source reality**: The open-source ecosystem for code enforcement is **limited**. **FixMyStreet** provides a mature, production-proven platform for **citizen complaint intake** with Open311 compatibility, deployed at scale in the UK . However, **full code enforcement case management** — violation processing, field inspections, officer assignment, penalty calculation, and compliance tracking — is not covered by open-source alternatives. Municipalities typically use **FixMyStreet for public reporting** and pair it with internal case management systems (often commercial, like Accela or EnerGov) or build custom workflows on platforms like **Joget** . Commercial platforms (OpenGov, Accela, Tyler EnerGov) remain the primary choice for comprehensive code enforcement operations.
+- This list is **community-curated** for informational and educational purposes — it does not constitute an official endorsement. ℹ️
+- Code enforcement systems process sensitive property owner information and public record filings; ensure compliance with local government privacy mandates and municipal records retention standards. 🛡️
+- **Open-Source Reality**: While tools like **FixMyStreet** and **Mark-a-Spot** excel at **citizen complaint intake and public reporting** via Open311 standards, comprehensive **end-to-end municipal code enforcement workflows** (citation issuing, legal escalation, administrative hearing management, and multi-stage field inspection schedules) are predominantly handled by specialized commercial SaaS solutions or custom enterprise builds. 🏛️
