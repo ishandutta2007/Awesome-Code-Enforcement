@@ -53,9 +53,9 @@ The global municipal government software / GovTech market size is estimated at *
 
 ## 💻 Open-Source GitHub Projects
 
-Below are top open-source GitHub repositories for civic reporting, municipal 311 issue tracking, and property code inspection backend frameworks. Repositories are sorted by GitHub Stars_Count in descending order ⭐.
+Below are top open-source GitHub repositories for civic reporting, municipal 311 issue tracking, and property code inspection backend frameworks. Repositories are sorted by GitHub_Stars_Count in descending order ⭐.
 
-| Open-Source Project 🛠️ | GitHub Stars_Count ⭐ | Description & Features 💡 |
+| Open-Source Project 🛠️ | GitHub_Stars_Count ⭐ | Description & Features 💡 |
 | :--- | :--- | :--- |
 | **[mysociety/fixmystreet](https://github.com/mysociety/fixmystreet)** | [![GitHub_Stars](https://img.shields.io/github/stars/mysociety/fixmystreet?style=social&color=white)](https://github.com/mysociety/fixmystreet/stargazers) | **The premiere open-source platform for citizen issue & code reporting.** Written in Perl/Catalyst. Powers FixMyStreet.com (sent 200,000+ reports to 400+ UK local councils). Open311 client/server API compatible. 🇬🇧 |
 | **[markaspot/mark-a-spot](https://github.com/markaspot/mark-a-spot)** | [![GitHub_Stars](https://img.shields.io/github/stars/markaspot/mark-a-spot?style=social&color=white)](https://github.com/markaspot/mark-a-spot/stargazers) | **Open-source civic issue tracking & reporting system.** Decoupled Drupal backend with Vue.js PWA frontend. Full Open311 Server API support, geocoding, interactive maps, and municipal status workflows. 📍 |
